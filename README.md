@@ -1,6 +1,7 @@
-# 📈 Tourenplanimport Timo Tool
+# 📈 Reserv-File Import for GoogleSheet
 
 Dieses Projekt automatisiert den täglichen Import einer neuen RESERV-CSV-Datei von einem SMB-Netzlaufwerk in eine MySQL-Datenbank. Es nutzt eine virtuelle Python-Umgebung und wird täglich über einen Cronjob ausgeführt.
+In einem GoogleSheet 'https://docs.google.com/spreadsheets/d/1iphb0e7DJyE-7fbwjjr37vK8Ybk_6jJMBWcldSSs3Ok/edit?gid=0#gid=0' wird die MySQL Tabelle ausgelesen und in den Reiter "Daten" eingefügt.
 
 ## 📂 Projektstruktur
 
