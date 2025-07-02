@@ -174,16 +174,21 @@ sudo nano /etc/systemd/system/lm_reserved_file2googlesheet.timer
 
 ```ini
 [Unit]
-Description=Timer für Reserved-Import alle 4 Stunden
+Description=Timer für Reserv-File-Import 4 Stunden
 
 [Timer]
-OnCalendar=*-*-* 00,04,08,12,16,20:00
+#OnCalendar=0/4:00:00
+OnCalendar=*-*-* 00:00:00
+OnCalendar=*-*-* 04:00:00
+OnCalendar=*-*-* 08:00:00
+OnCalendar=*-*-* 12:00:00
+OnCalendar=*-*-* 16:00:00
+OnCalendar=*-*-* 20:00:00
 Persistent=true
 Unit=lm_reserved_file2googlesheet.service
 
 [Install]
 WantedBy=timers.target
-
 ```
 
 ---
