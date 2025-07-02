@@ -198,6 +198,9 @@ WantedBy=timers.target
 ```bash
 sudo systemctl daemon-reexec
 sudo systemctl daemon-reload
+
+ggf. bei Problemen einmal --> sudo systemctl disable lm_reserved_file2googlesheet.timer
+
 sudo systemctl enable --now lm_reserved_file2googlesheet.timer
 ```
 
